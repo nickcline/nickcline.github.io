@@ -10,6 +10,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Courier new", monospace}
 </head>
 <body>
 
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">☰</a>
+  <a href="#hello" onclick="w3_close()" class="w3-bar-item w3-button">Hello</a>
+  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
+  <a href="#resume" onclick="w3_close()" class="w3-bar-item w3-button">Resume</a>
+</nav>
+
 
     <div class="w3-top">
         <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
@@ -21,16 +30,32 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Courier new", monospace}
         </div>
     </div>
 
-    <div class="main-content nick-center">
-        <div class="col-4">
-            <p> grr col 1</p>
-        </div>
-        <div class="col-8">
-            <p> grr col 2</p>
-        </div>
-        <div class="col-4">
-            <p> grr col 3</p>
-        </div>
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+<div class="w3-container w3-padding-32 w3-center">
+    <h3>M.S. Mechanical Engineering</h3><br>
+    <img src="sad.gif" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h6><i>Programmer, Designer, Engineer</i></h6>
+      <p>look at this guy. I mean look at him! he's doin his thing. look at em go. what a guy. how inspiring. geez so inspiring it hurts. one day i wish to be as inspiring. wow. just wow. im speechless</p>
     </div>
+  </div>
+  <hr>
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
 </body>
 </html>
