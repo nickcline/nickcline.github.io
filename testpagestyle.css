@@ -1,3 +1,15 @@
+.row::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float:left;
+    padding:15px;
+    border: 1px solid red;
+}
+
 .col-1 {width:6.25%;}
 .col-2 {width:12.5%;}
 .col-3 {width:18.75%;}
@@ -14,18 +26,6 @@
 .col-14 {width:87.5%;}
 .col-15 {width:93.75%;}
 .col-16 {width:100%;}
-
-[class*="col-"] {
-    float:left;
-    padding:15px;
-    border: 1px solid red;
-}
-
-.row::after {
-    content:"";
-    clear: both;
-    display: table;
-}
 
 .header {
     font-family: "Courier new", monospace;
