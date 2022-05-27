@@ -9,6 +9,12 @@
     padding:15px;
     border: 1px solid red;
 }
+.main-content{
+    margin-left:0!important;
+    margin-right:0!important;
+    max-width:100%;
+}
+
 
 .col-1 {width:6.25%;}
 .col-2 {width:12.5%;}
@@ -26,6 +32,12 @@
 .col-14 {width:87.5%;}
 .col-15 {width:93.75%;}
 .col-16 {width:100%;}
+
+.padding-16{padding-top:16px!important;padding-bottom:16px!important}
+.padding-8{padding-top:8px!important;padding-bottom:8px!important}
+
+
+.nick-center{text-align:center!important}
 
 .header {
     font-family: "Courier new", monospace;
